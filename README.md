@@ -1,5 +1,7 @@
 # Share Button Links - Vue
 
+# My edits
+I have changed the main.css file as well as a few of the Button*.vue files for my needs
 ## Installation
 
 You can install using `npm install share-button-links` or `yarn add share-button-links`.

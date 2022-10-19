@@ -1,3 +1,30 @@
+span {
+  margin-top: -1.5px;
+  padding-left: 5px;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-evenly;
+}
+
+.btn-link {
+  display: inline-block;
+
+  width: 150px;
+  max-width: 150px;
+  padding: 8px 32px 10px 10px;
+  border: 2px solid #ddd;
+  background-color: #ddd;
+  font-weight: 500;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.4s ease-in-out;
+}
+
 .copy-wrap {
   position: relative;
   width: fit-content;
@@ -5,222 +32,214 @@
 
 .copied-text {
   position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
+  bottom: 2rem;
+  left: 80%;
   z-index: 5;
   display: block;
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.btn-link {
-  display: inline-block;
-  padding: 8px 32px;
-  border: 2px solid #DDD;
-  background-color: #DDD;
-  font-weight: 500;
-  text-decoration: none;
-  color: #222;
-  transition: all 0.4s ease-in-out;
-}
 .btn-link:hover {
-  background-color: #CCC;
+  background-color: #ccc;
 }
 .btn-link.btn-link-facebook {
-  background-color: #3B5998;
-  border-color: #3B5998;
-  color: #FFF;
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: #fff;
 }
 .btn-link.btn-link-facebook:hover {
   background-color: #30487d;
   border-color: #30487d;
-  color: #FFF;
+  color: #fff;
 }
 .btn-link.btn-link-facebook.is-bordered {
   background-color: transparent;
-  color: #3B5998;
+  color: #3b5998;
 }
 .btn-link.btn-link-facebook.is-bordered:hover {
-  color: #FFF;
+  color: #fff;
   background-color: #30487d;
 }
 .btn-link.btn-link-email {
-  background-color: #FFF;
-  border-color: #34B7F1;
+  background-color: #fff;
+  border-color: #34b7f1;
 }
 .btn-link.btn-link-email:hover {
   background-color: rgba(52, 183, 241, 0.04);
-  border-color: #34A3F1;
-  color: #FFF;
+  border-color: #34a3f1;
+  color: #fff;
 }
 .btn-link.btn-link-email.is-bordered {
   background-color: transparent;
-  color: #34B7F1;
+  color: #34b7f1;
 }
 .btn-link.btn-link-email.is-bordered:hover {
-  color: #FFF;
-  background-color: #34A3F1;
+  color: #fff;
+  background-color: #34a3f1;
 }
 .btn-link.btn-link-twitter {
-  background-color: #00ACEE;
-  border-color: #00ACEE;
-  color: #FFF;
+  background-color: #00acee;
+  border-color: #00acee;
+  color: #fff;
 }
 .btn-link.btn-link-twitter:hover {
-  background-color: #009DDB;
-  border-color: #009DDB;
-  color: #FFF;
+  background-color: #009ddb;
+  border-color: #009ddb;
+  color: #fff;
 }
 .btn-link.btn-link-twitter.is-bordered {
   background-color: transparent;
-  color: #00ACEE;
+  color: #00acee;
 }
 .btn-link.btn-link-twitter.is-bordered:hover {
-  color: #FFF;
-  background-color: #009DDB;
+  color: #fff;
+  background-color: #009ddb;
 }
 .btn-link.btn-link-tumblr {
-  background-color: #36465D;
-  border-color: #36465D;
-  color: #FFF;
+  background-color: #36465d;
+  border-color: #36465d;
+  color: #fff;
 }
 .btn-link.btn-link-tumblr:hover {
-  background-color: #14141D;
-  border-color: #14141D;
-  color: #FFF;
+  background-color: #14141d;
+  border-color: #14141d;
+  color: #fff;
 }
 .btn-link.btn-link-tumblr.is-bordered {
   background-color: transparent;
-  color: #36465D;
+  color: #36465d;
 }
 .btn-link.btn-link-tumblr.is-bordered:hover {
-  color: #FFF;
-  background-color: #14141D;
+  color: #fff;
+  background-color: #14141d;
 }
 .btn-link.btn-link-pinterest {
-  background-color: #E60023;
-  border-color: #E60023;
-  color: #FFF;
+  background-color: #e60023;
+  border-color: #e60023;
+  color: #fff;
 }
 .btn-link.btn-link-pinterest:hover {
-  background-color: #D3001F;
-  border-color: #D3001F;
-  color: #FFF;
+  background-color: #d3001f;
+  border-color: #d3001f;
+  color: #fff;
 }
 .btn-link.btn-link-pinterest.is-bordered {
   background-color: transparent;
-  color: #E60023;
+  color: #e60023;
 }
 .btn-link.btn-link-pinterest.is-bordered:hover {
-  color: #FFF;
-  background-color: #D3001F;
+  color: #fff;
+  background-color: #d3001f;
 }
 .btn-link.btn-link-linkedin {
-  background-color: #00A0DC;
-  border-color: #00A0DC;
-  color: #FFF;
+  background-color: #00a0dc;
+  border-color: #00a0dc;
+  color: #fff;
 }
 .btn-link.btn-link-linkedin:hover {
-  background-color: #0077B5;
-  border-color: #0077B5;
-  color: #FFF;
+  background-color: #0077b5;
+  border-color: #0077b5;
+  color: #fff;
 }
 .btn-link.btn-link-linkedin.is-bordered {
   background-color: transparent;
-  color: #00A0DC;
+  color: #00a0dc;
 }
 .btn-link.btn-link-linkedin.is-bordered:hover {
-  color: #FFF;
-  background-color: #0077B5;
+  color: #fff;
+  background-color: #0077b5;
 }
 .btn-link.btn-link-reddit {
-  background-color: #FF4500;
-  border-color: #FF4500;
-  color: #FFF;
+  background-color: #ff4500;
+  border-color: #ff4500;
+  color: #fff;
 }
 .btn-link.btn-link-reddit:hover {
-  background-color: #D33B00;
-  border-color: #D33B00;
-  color: #FFF;
+  background-color: #d33b00;
+  border-color: #d33b00;
+  color: #fff;
 }
 .btn-link.btn-link-reddit.is-bordered {
   background-color: transparent;
-  color: #FF4500;
+  color: #ff4500;
 }
 .btn-link.btn-link-reddit.is-bordered:hover {
-  color: #FFF;
-  background-color: #D33B00;
+  color: #fff;
+  background-color: #d33b00;
 }
 .btn-link.btn-link-whatsapp {
-  background-color: #128C7E;
-  border-color: #128C7E;
-  color: #FFF;
+  background-color: #128c7e;
+  border-color: #128c7e;
+  color: #fff;
 }
 .btn-link.btn-link-whatsapp:hover {
-  background-color: #075E54;
-  border-color: #075E54;
-  color: #FFF;
+  background-color: #075e54;
+  border-color: #075e54;
+  color: #fff;
 }
 .btn-link.btn-link-whatsapp.is-bordered {
   background-color: transparent;
-  color: #128C7E;
+  color: #128c7e;
 }
 .btn-link.btn-link-whatsapp.is-bordered:hover {
-  color: #FFF;
-  background-color: #075E54;
+  color: #fff;
+  background-color: #075e54;
 }
 .btn-link.btn-link-telegram {
-  background-color: #229ED9;
-  border-color: #229ED9;
-  color: #FFF;
+  background-color: #229ed9;
+  border-color: #229ed9;
+  color: #fff;
 }
 .btn-link.btn-link-telegram:hover {
-  background-color: #1E8CC0;
-  border-color: #1E8CC0;
-  color: #FFF;
+  background-color: #1e8cc0;
+  border-color: #1e8cc0;
+  color: #fff;
 }
 .btn-link.btn-link-telegram.is-bordered {
   background-color: transparent;
-  color: #229ED9;
+  color: #229ed9;
 }
 .btn-link.btn-link-telegram.is-bordered:hover {
-  color: #FFF;
-  background-color: #1E8CC0;
+  color: #fff;
+  background-color: #1e8cc0;
 }
 .btn-link.btn-link-pocket {
-  background-color: #EE4056;
-  border-color: #EE4056;
-  color: #FFF;
+  background-color: #ee4056;
+  border-color: #ee4056;
+  color: #fff;
 }
 .btn-link.btn-link-pocket:hover {
-  background-color: #DE142D;
-  border-color: #DE142D;
-  color: #FFF;
+  background-color: #de142d;
+  border-color: #de142d;
+  color: #fff;
 }
 .btn-link.btn-link-pocket.is-bordered {
   background-color: transparent;
-  color: #EE4056;
+  color: #ee4056;
 }
 .btn-link.btn-link-pocket.is-bordered:hover {
-  color: #FFF;
-  background-color: #DE142D;
+  color: #fff;
+  background-color: #de142d;
 }
 .btn-link.btn-link-copy {
-  background-color: #10B981;
-  border-color: #10B981;
-  color: #FFF;
+  background-color: #10b981;
+  border-color: #10b981;
+  color: #fff;
 }
 .btn-link.btn-link-copy:hover {
   background-color: #059669;
   border-color: #059669;
-  color: #FFF;
+  color: #fff;
 }
 .btn-link.btn-link-copy.is-bordered {
   background-color: transparent;
-  color: #10B981;
+  color: #10b981;
 }
 .btn-link.btn-link-copy.is-bordered:hover {
-  color: #FFF;
+  color: #fff;
   background-color: #059669;
 }
 .btn-link.is-rounded {
@@ -245,209 +264,209 @@
   justify-content: center;
   padding: 4px;
   transition: all 0.4s ease-in-out;
-  border: 2px solid #DDD;
+  border: 2px solid #ddd;
 }
 .btn-link-icon svg {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
 }
 .btn-link-icon.btn-link-facebook-icon {
-  background-color: #3B5998;
-  border-color: #3B5998;
-  color: #FFF;
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: #fff;
 }
 .btn-link-icon.btn-link-facebook-icon:hover {
   background-color: #30487d;
   border-color: #30487d;
-  color: #FFF;
+  color: #fff;
 }
 .btn-link-icon.btn-link-facebook-icon.is-bordered {
   background-color: transparent;
-  color: #3B5998;
+  color: #3b5998;
 }
 .btn-link-icon.btn-link-facebook-icon.is-bordered:hover {
   background-color: #30487d;
-  color: #FFF;
+  color: #fff;
 }
 .btn-link-icon.btn-link-whatsapp-icon {
-  background-color: #128C7E;
-  border-color: #128C7E;
-  color: #FFF;
+  background-color: #128c7e;
+  border-color: #128c7e;
+  color: #fff;
 }
 .btn-link-icon.btn-link-whatsapp-icon:hover {
-  background-color: #075E54;
-  border-color: #075E54;
-  color: #FFF;
+  background-color: #075e54;
+  border-color: #075e54;
+  color: #fff;
 }
 .btn-link-icon.btn-link-whatsapp-icon.is-bordered {
   background-color: transparent;
-  color: #128C7E;
+  color: #128c7e;
 }
 .btn-link-icon.btn-link-whatsapp-icon.is-bordered:hover {
-  background-color: #075E54;
-  color: #FFF;
+  background-color: #075e54;
+  color: #fff;
 }
 .btn-link-icon.btn-link-telegram-icon {
-  background-color: #229ED9;
-  border-color: #229ED9;
-  color: #FFF;
+  background-color: #229ed9;
+  border-color: #229ed9;
+  color: #fff;
 }
 .btn-link-icon.btn-link-telegram-icon:hover {
-  background-color: #1E8CC0;
-  border-color: #1E8CC0;
-  color: #FFF;
+  background-color: #1e8cc0;
+  border-color: #1e8cc0;
+  color: #fff;
 }
 .btn-link-icon.btn-link-telegram-icon.is-bordered {
   background-color: transparent;
-  color: #229ED9;
+  color: #229ed9;
 }
 .btn-link-icon.btn-link-telegram-icon.is-bordered:hover {
-  background-color: #1E8CC0;
-  color: #FFF;
+  background-color: #1e8cc0;
+  color: #fff;
 }
 .btn-link-icon.btn-link-twitter-icon {
-  background-color: #00ACEE;
-  border-color: #00ACEE;
-  color: #FFF;
+  background-color: #00acee;
+  border-color: #00acee;
+  color: #fff;
 }
 .btn-link-icon.btn-link-twitter-icon:hover {
-  background-color: #009DDB;
-  border-color: #009DDB;
-  color: #FFF;
+  background-color: #009ddb;
+  border-color: #009ddb;
+  color: #fff;
 }
 .btn-link-icon.btn-link-twitter-icon.is-bordered {
   background-color: transparent;
-  color: #00ACEE;
+  color: #00acee;
 }
 .btn-link-icon.btn-link-twitter-icon.is-bordered:hover {
-  background-color: #009DDB;
-  color: #FFF;
+  background-color: #009ddb;
+  color: #fff;
 }
 .btn-link-icon.btn-link-tumblr-icon {
-  background-color: #36465D;
-  border-color: #36465D;
-  color: #FFF;
+  background-color: #36465d;
+  border-color: #36465d;
+  color: #fff;
 }
 .btn-link-icon.btn-link-tumblr-icon:hover {
-  background-color: #14141D;
-  border-color: #14141D;
-  color: #FFF;
+  background-color: #14141d;
+  border-color: #14141d;
+  color: #fff;
 }
 .btn-link-icon.btn-link-tumblr-icon.is-bordered {
   background-color: transparent;
-  color: #36465D;
+  color: #36465d;
 }
 .btn-link-icon.btn-link-tumblr-icon.is-bordered:hover {
-  background-color: #14141D;
-  color: #FFF;
+  background-color: #14141d;
+  color: #fff;
 }
 .btn-link-icon.btn-link-linkedin-icon {
-  background-color: #00A0DC;
-  border-color: #00A0DC;
-  color: #FFF;
+  background-color: #00a0dc;
+  border-color: #00a0dc;
+  color: #fff;
 }
 .btn-link-icon.btn-link-linkedin-icon:hover {
-  background-color: #0077B5;
-  border-color: #0077B5;
-  color: #FFF;
+  background-color: #0077b5;
+  border-color: #0077b5;
+  color: #fff;
 }
 .btn-link-icon.btn-link-linkedin-icon.is-bordered {
   background-color: transparent;
-  color: #00A0DC;
+  color: #00a0dc;
 }
 .btn-link-icon.btn-link-linkedin-icon.is-bordered:hover {
-  background-color: #0077B5;
-  color: #FFF;
+  background-color: #0077b5;
+  color: #fff;
 }
 .btn-link-icon.btn-link-reddit-icon {
-  background-color: #FF4500;
-  border-color: #FF4500;
-  color: #FFF;
+  background-color: #ff4500;
+  border-color: #ff4500;
+  color: #fff;
 }
 .btn-link-icon.btn-link-reddit-icon:hover {
-  background-color: #D33B00;
-  border-color: #D33B00;
-  color: #FFF;
+  background-color: #d33b00;
+  border-color: #d33b00;
+  color: #fff;
 }
 .btn-link-icon.btn-link-reddit-icon.is-bordered {
   background-color: transparent;
-  color: #FF4500;
+  color: #ff4500;
 }
 .btn-link-icon.btn-link-reddit-icon.is-bordered:hover {
-  background-color: #D33B00;
-  color: #FFF;
+  background-color: #d33b00;
+  color: #fff;
 }
 .btn-link-icon.btn-link-pinterest-icon {
-  background-color: #E60023;
-  border-color: #E60023;
-  color: #FFF;
+  background-color: #e60023;
+  border-color: #e60023;
+  color: #fff;
 }
 .btn-link-icon.btn-link-pinterest-icon:hover {
-  background-color: #D3001F;
-  border-color: #D3001F;
-  color: #FFF;
+  background-color: #d3001f;
+  border-color: #d3001f;
+  color: #fff;
 }
 .btn-link-icon.btn-link-pinterest-icon.is-bordered {
   background-color: transparent;
-  color: #E60023;
+  color: #e60023;
 }
 .btn-link-icon.btn-link-pinterest-icon.is-bordered:hover {
-  background-color: #D3001F;
-  color: #FFF;
+  background-color: #d3001f;
+  color: #fff;
 }
 .btn-link-icon.btn-link-pocket-icon {
-  background-color: #EE4056;
-  border-color: #EE4056;
-  color: #FFF;
+  background-color: #ee4056;
+  border-color: #ee4056;
+  color: #fff;
 }
 .btn-link-icon.btn-link-pocket-icon:hover {
-  background-color: #DE142D;
-  border-color: #DE142D;
-  color: #FFF;
+  background-color: #de142d;
+  border-color: #de142d;
+  color: #fff;
 }
 .btn-link-icon.btn-link-pocket-icon.is-bordered {
   background-color: transparent;
-  color: #EE4056;
+  color: #ee4056;
 }
 .btn-link-icon.btn-link-pocket-icon.is-bordered:hover {
-  background-color: #DE142D;
-  color: #FFF;
+  background-color: #de142d;
+  color: #fff;
 }
 .btn-link-icon.btn-link-email-icon {
-  background-color: #34B7F1;
-  border-color: #34B7F1;
-  color: #FFF;
+  background-color: #34b7f1;
+  border-color: #34b7f1;
+  color: #fff;
 }
 .btn-link-icon.btn-link-email-icon:hover {
-  background-color: #34A3F1;
-  border-color: #34A3F1;
-  color: #FFF;
+  background-color: #34a3f1;
+  border-color: #34a3f1;
+  color: #fff;
 }
 .btn-link-icon.btn-link-email-icon.is-bordered {
   background-color: transparent;
-  color: #34B7F1;
+  color: #34b7f1;
 }
 .btn-link-icon.btn-link-email-icon.is-bordered:hover {
-  background-color: #34A3F1;
-  color: #FFF;
+  background-color: #34a3f1;
+  color: #fff;
 }
 .btn-link-icon.btn-link-copy-icon {
-  background-color: #10B981;
-  border-color: #10B981;
-  color: #FFF;
+  background-color: #10b981;
+  border-color: #10b981;
+  color: #fff;
 }
 .btn-link-icon.btn-link-copy-icon:hover {
   background-color: #059669;
   border-color: #059669;
-  color: #FFF;
+  color: #fff;
 }
 .btn-link-icon.btn-link-copy-icon.is-bordered {
   background-color: transparent;
-  color: #10B981;
+  color: #10b981;
 }
 .btn-link-icon.btn-link-copy-icon.is-bordered:hover {
   background-color: #059669;
-  color: #FFF;
+  color: #fff;
 }
 .btn-link-icon.is-rounded {
   border-radius: 5px;
@@ -486,7 +505,7 @@
   width: auto;
   height: auto;
   background-color: transparent;
-  color: #FFF;
+  color: #fff;
 }
 .btn-link-group li .btn-link-icon.is-whited svg {
   width: 26px;
@@ -498,11 +517,11 @@
 }
 
 .slide-up-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.9s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-up-fade-enter-from,
 .slide-up-fade-leave-to {
-  transform: translateY(20px);
+  transform: translateX(20px);
   opacity: 0;
 }

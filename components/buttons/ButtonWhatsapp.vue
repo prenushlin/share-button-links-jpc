@@ -6,7 +6,7 @@
        {'is-circled': isCircled },
        {'is-bordered': isBordered }
      ]"
-     title="WhatsApp"
+     title="Share on WhatsApp"
      rel="nofollow noopener" target="_blank">
     {{ text }}
     <span v-if="hasIcon">
